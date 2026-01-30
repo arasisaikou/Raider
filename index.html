@@ -31,31 +31,31 @@
   <h1>Discord Multi Token Sender (Fixed)</h1>
 
   <label for="tokens">アカウントトークン（最大20個、1行1つ）</label>
-  <textarea id="tokens" placeholder="トークンを改行で入力（最大20個）"></textarea>
+  <textarea id="tokens" placeholder="トークン複数可能 (改行)"></textarea>
 
   <div class="row">
     <div>
-      <label for="delay">送信間隔（ms）※最低2000ms推奨</label>
+      <label for="delay">送信速度</label>
       <input type="number" id="delay" value="5000" min="2000">
     </div>
     <div>
-      <label for="count">送信回数（0=無限）</label>
+      <label for="count">送信回数</label>
       <input type="number" id="count" value="0" min="0">
     </div>
   </div>
 
   <div class="row">
     <div>
-      <label for="guildId">サーバーID（表示用・任意）</label>
+      <label for="guildId">サーバーID</label>
       <input type="text" id="guildId" placeholder="例: 123456789012345678">
     </div>
     <div>
-      <label for="channelId">チャンネルID（必須）</label>
+      <label for="channelId">チャンネルID</label>
       <input type="text" id="channelId" placeholder="例: 987654321098765432">
     </div>
   </div>
 
-  <label for="message">送信メッセージ（最大2000文字）</label>
+  <label for="message">送信メッセージ</label>
   <textarea id="message" maxlength="2000" placeholder="ここにメッセージ"></textarea>
 
   <div class="buttons">
